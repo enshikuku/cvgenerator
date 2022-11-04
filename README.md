@@ -1,6 +1,6 @@
 <h1 align="center">CV Generator</h1>
 
-<p align="center"><img alg="cv-generator-logo" src="./images/cv.png" width='175px' align="center"></p>
+<p align="center"><img alg="cv-generator-logo" src="./src/assets/images/cv.png" width='175px' align="center"></p>
 
 A one of a kind simple Resume builder that keeps your privacy in mind, Generate breath taking Resumes with one click of a button. 
 
