@@ -1,6 +1,6 @@
 @font-face {
     font-family: Caramond;
-    src: url(CormorantGaramond-Regular.ttf);
+    src: url(../assets/fonts/CormorantGaramond-Regular.ttf);
 }
 * {
     padding: 0;
