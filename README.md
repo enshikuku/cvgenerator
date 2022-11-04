@@ -5,7 +5,7 @@ A one of a kind simple Resume builder that keeps your privacy in mind, Generate 
 With this site, you can crate as many Resumes as you want using multiple custom templates to help you land you first job. 
 
 ## Langugages 
-These ar the languages suported for now. 
+These are the languages suported for now. 
 
 * [X] English
 * []  Kiswahili
