@@ -16,7 +16,6 @@ header {
     display: flex;
     justify-content: space-between;
     height: 70px;
-    border: 1px solid black;
     align-items: center;
 }
 nav {
@@ -30,7 +29,6 @@ nav a {
 }
 #home {
     height: 100vh;
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,7 +39,6 @@ nav a {
     justify-content: space-evenly;
     height: 100%;
     align-items: center;
-    border: 1px solid black;
     width: 60%;
 }
 #home h2 {
