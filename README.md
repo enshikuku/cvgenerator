@@ -8,8 +8,8 @@ With this site, you can crate as many Resumes as you want using multiple custom 
 These are the languages suported for now. 
 
 * [X] English
-* [ ]  Kiswahili
-* [ ]  French
-* [ ]  Dutch 
+* [ ] Kiswahili
+* [ ] French
+* [ ] Dutch 
 
 
