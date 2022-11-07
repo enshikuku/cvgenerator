@@ -10,14 +10,23 @@
     font-family: Caramond;
 }
 .container {
-    padding: 5px 10px;
+    padding: 5px 150px;
 }
 header {
     display: flex;
     justify-content: space-between;
-    height: 70px;
-    border: 1px solid black;
+    height: 90px;
     align-items: center;
+    background-color: #F6EEE0;
+}
+header h1 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 10px;
+    color: #A45C40;
+}
+header #logo {
+    height: 60px;
 }
 nav {
     display: flex;
@@ -26,7 +35,8 @@ nav {
 nav a {
     font-size: 30px;
     text-decoration: none;
-    color: black;
+    color: #A45C40;
+    font-weight: bold;
 }
 #home {
     height: 100vh;
@@ -34,6 +44,8 @@ nav a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-image: url("../assets/images/homebg.jpg");
+    background-size: contain;
 }
 #home div {
     display: flex;
@@ -41,8 +53,11 @@ nav a {
     justify-content: space-evenly;
     height: 100%;
     align-items: center;
-    border: 1px solid black;
+    border: none;
+    padding: 30px;
+    background-color: rgba(255, 72, 0, 0.2);
     width: 60%;
+    border-radius: 15px;
 }
 #home h2 {
     font-size: 50px;
