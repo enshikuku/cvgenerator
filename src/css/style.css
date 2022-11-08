@@ -1,3 +1,7 @@
+/* COLOR
+    #F6EEE0
+    #A45C40
+*/
 @font-face {
     font-family: Caramond;
     src: url(../assets/fonts/CormorantGaramond-Regular.ttf);
@@ -11,6 +15,7 @@
 }
 .container {
     padding: 5px 150px;
+    border-bottom: 3px solid #A45C40;
 }
 header {
     display: flex;
@@ -40,9 +45,8 @@ nav a {
 }
 #home {
     height: 100vh;
-    border: 1px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background-image: url("../assets/images/homebg.jpg");
     background-size: contain;
@@ -55,9 +59,10 @@ nav a {
     align-items: center;
     border: none;
     padding: 30px;
-    background-color: rgba(255, 72, 0, 0.2);
-    width: 60%;
-    border-radius: 15px;
+    color: #311556;
+    background-color: rgba(255, 209, 158, 0.6);
+    width: 49%;
+    border-radius: 25px;
 }
 #home h2 {
     font-size: 50px;
@@ -67,4 +72,53 @@ nav a {
 #home p {
     font-size: 28px;
     line-height: 38px;
+    font-weight: bold;
+}
+#home img {
+    width: 100%;
+    /* background-color: rgba(255, 72, 0, 0.2); */
+}
+#create {
+    background-color: #F6EEE0;
+}
+#create-1 {
+    width: 30%;
+}
+#create-2 {
+    width: 65%;
+}
+#create h3 {
+    font-size: 40px;
+    color: #311556;
+    letter-spacing: 2px;
+}
+#create p, #cvform input {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 3px;
+    width: 95%;
+}
+#create-2, #create-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#create #cvprefill, #create #cvform {
+    display: flex;
+    justify-content: space-around;
+}
+#create #cvprefill {
+    display: none;
+}
+#profileInput, #skillInput, #workInput {
+    height: 300px;
+}
+#hobyInput, #educationInput {
+    height: 100px;
+}
+footer {
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    text-align: center;
 }
