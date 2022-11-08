@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/assets/images/cv.png" type="image/x-icon">
     <title>CV generator</title>
 </head>
 <body>
@@ -22,43 +23,97 @@
             <h2>CV GENERATOR</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur culpa ipsam numquam! Quis laudantium deserunt officiis. Inventore debitis corporis cupiditate, reiciendis quos odio. Rerum quia sapiente minus nihil possimus, reprehenderit asperiores placeat ipsam ullam adipisci ipsa, inventore voluptate commodi. Quia eos, veniam illo reiciendis saepe architecto error fugiat ea rerum distinctio. Vel laboriosam quibusdam expedita, perferendis omnis hic nulla incidunt pariatur voluptates corporis molestias repellendus autem aliquid, voluptatum provident quia repellat quas at eveniet totam? Itaque at iure ratione assumenda dolor mollitia totam sit! Rem quam velit iusto, dicta ab doloremque debitis, eos optio, sunt consequatur aliquam fugiat sit!</p>
         </div>
-        <img src="src/assets/images/cv.png" alt="">
+        <div id="img">
+            <img src="src/assets/images/cv.png" alt="">
+        </div>
     </main>
     <div id="create" class="container">
-        <div id="create-1">
-            <h2>Profile</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus distinctio sapiente, debitis incidunt odit illum in? Assumenda voluptas atque est recusandae officiis, fugiat eius omnis possimus ullam architecto magni quod sapiente necessitatibus quas soluta? Qui facilis laborum assumenda eveniet illo ipsum amet, inventore magnam rem, sit temporibus fugit, aperiam ratione.</p>
-            <h2>Contact</h2>
-            <p>Phone: +1111111111 <br> Emai: test@gmail.com </p>
-            <h2>Hobies</h2>
-            <p>Lorem  <br> ipsum  <br> dolor <br>  sit.</p>
+        
+        <h1>CURRICULUM VITAE</h1>
+        <div id="cvprefill">
+            <div id="create-1">
+                <div>   
+                    <h3>Profile</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus distinctio sapiente, debitis incidunt odit illum in? Assumenda voluptas atque est recusandae officiis, fugiat eius omnis possimus ullam architecto magni quod sapiente necessitatibus quas soluta? Qui facilis laborum assumenda eveniet illo ipsum amet, inventore magnam rem, sit temporibus fugit, aperiam ratione.</p>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p>Phone: +1111111111 <br> Emai: test@gmail.com </p>
+                </div>
+                <div>
+                    <h3>Hobies</h3>
+                    <p>Lorem  <br> ipsum  <br> dolor <br>  sit.</p>
+                </div>
+            </div>
+            <div id="create-2">
+                <div>
+                    <h2>YOUR NAME</h2>
+                </div>
+                <div>
+                    <h3>Education</h3>
+                    <h4>School Name</h4>
+                    <p>date</p>
+                    <p>Perfomances</p>
+                </div>
+                <div>
+                    <h3>Work Experience</h3>
+                    <h4>School Name</h4>
+                    <p>date</p>
+                    <p>Perfomances</p>
+                </div>
+                <div>
+                    <h3>Skills</h3>
+                    <p>Lorem, ipsum.</p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Lorem, ipsum.</p>
+                </div>
+                <a href="" id="createmine">CREATE MINE</a>
+            </div>
         </div>
-        <div id="create-2">
-            <h2>YOUR NAME</h2>
-            <div>
+        <form id="cvform">
+            <div id="create-1">
+                <div class="form-input">
+                    <label for=""><h3>Profile</h3></label>
+                    <input type="text" id="profileInput" placeholder="Input here your profile" required>
+                </div>
+                <div class="form-input">
+                    <label for=""><h3>Contact</h3></label>
+                    <input type="number" id="phoneInput" placeholder="Input here your Phone Number" required><br>
+                    <input type="email" id="emailInput" placeholder="Input here your Email" required>
+                </div>
+                <label for=""><h3>Hobies</h3></label>
+                <div class="form-input">
+                    <input type="text" id="hobyInput" placeholder="Input here your Hobies" required>
+                </div>
+            </div>
+            <div id="create-2">
+                <label for=""><h3>Your Name</h3></label>
+                <div class="form-input">
+                    <input type="text" id="nameInput" placeholder="Input here your Name" required>
+                </div>
                 <h3>Education</h3>
-                <h4>School Name</h4>
-                <p>date</p>
-                <p>Perfomances</p>
-            </div>
-            <div>
+                <div class="form-input">
+                    <input type="text" id="educationInput" placeholder="Input here your School Name" required><br>
+                    <input type="text" id="educationInput" placeholder="Input here Date attended" required><br>
+                    <input type="text" id="educationInput" placeholder="Input here Perfomances" required>
+                </div>
+                
                 <h3>Work Experience</h3>
-                <h4>School Name</h4>
-                <p>date</p>
-                <p>Perfomances</p>
-            </div>
-            <div>
+                <div class="form-input">
+                    <input type="text" id="workInput" placeholder="Input here your work Experience" required>
+                </div>
                 <h3>Skills</h3>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
+                <div class="form-input">
+                    <input type="text" id="skillInput" placeholder="Input here your Skills" required>
+                </div>
+                <input type="submit" value="Export to PDF">
             </div>
-        </div>
+        </form>
     </div>
-    <div id="about">
+    <div id="about" class="container">
         <h3>About the team</h3>
     </div>
-    <div id="contact">
+    <div id="contact" class="container">
         <h3>Lets get in touch !</h3>
     </div>
     <footer>
