@@ -35,3 +35,8 @@
     margin-bottom: 0;
     cursor: pointer;
 }
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}

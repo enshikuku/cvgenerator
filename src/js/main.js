@@ -30,10 +30,6 @@ form.addEventListener('submit', (e) => {
         const techStack = {skill1, skill2, skill3};
         userData.push(techStack);
 
-        const mainBefore = document.querySelector('.main-content');
-
-        document.body.removeChild(mainBefore);
-
         const main = document.createElement('main');
         main.id = 'resume';
         main.className = 'main-box';
@@ -68,12 +64,13 @@ form.addEventListener('submit', (e) => {
 
         main.innerHTML = innerDiv;
 
-        document.body.appendChild(main);
+        const mainBefore = document.querySelector('.main-content');
 
-        const downloadBtn = document.createElement('button');
+        const parentElem = mainBefore.parentNode;
 
-        downloadBtn.classList.add('download');
-        downloadBtn.textContent = 'Download';
+        parentElem.replaceChild(main, mainBefore);
 
-        document.body.appendChild(downloadBtn);
+        const downloadBtn = document.querySelector('.download');
+
+        downloadBtn.classList.remove('hidden');
 })
