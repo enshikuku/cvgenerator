@@ -12,10 +12,10 @@
     <header class="container">
         <h1>GENERATOR<img src="src/assets/images/cv.png" alt="LOGO" id="logo"></h1>
         <nav>
-            <a href="#home">HOME</a>
-            <a href="#create">CREATE</a>
-            <a href="#about">ABOUT</a>
-            <a href="#contact">CONTACT</a>
+            <a href="#home">Home</a>
+            <a href="#create">Create</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <main id="home" class="container">
@@ -38,7 +38,7 @@
                 </div>
                 <div>
                     <h3>Contact</h3>
-                    <p>Phone: +1111111111 <br> Emai: test@gmail.com </p>
+                    <p>Phone: +1111111111 <br> Email: test@gmail.com </p>
                 </div>
                 <div>
                     <h3>Hobies</h3>
@@ -73,38 +73,42 @@
         <form id="cvform">
             <div id="create-1">
                 <div class="form-input">
-                    <label for=""><h3>Profile</h3></label>
-                    <input type="text" id="profileInput" placeholder="Input here your profile" required>
+                    <label for="profile"><h3>Profile</h3></label>
+                    <input type="text" name="profile" id="profile" placeholder="Input here your profile" required>
                 </div>
                 <div class="form-input">
                     <label for=""><h3>Contact</h3></label>
-                    <input type="number" id="phoneInput" placeholder="Input here your Phone Number" required><br>
-                    <input type="email" id="emailInput" placeholder="Input here your Email" required>
+                    <input type="number" id="phone" id="phone" placeholder="Input here your Phone Number" required><br>
+                    <input type="email" name="email" id="email" placeholder="Input here your Email" required>
                 </div>
-                <label for=""><h3>Hobies</h3></label>
+                <label for="hobby"><h3>Hobbies</h3></label>
                 <div class="form-input">
-                    <input type="text" id="hobyInput" placeholder="Input here your Hobies" required>
+                    <input type="text" name="hobby" id="hobby" placeholder="Input here your Hobies" required>
                 </div>
             </div>
             <div id="create-2">
-                <label for=""><h3>Your Name</h3></label>
+                <label for="firstName"><h3>First Name</h3></label>
                 <div class="form-input">
-                    <input type="text" id="nameInput" placeholder="Input here your Name" required>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                </div>
+                <label for="lastName"><h3>Last Name</h3></label>
+                <div class="form-input">
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
                 </div>
                 <h3>Education</h3>
                 <div class="form-input">
-                    <input type="text" id="educationInput" placeholder="Input here your School Name" required><br>
-                    <input type="text" id="educationInput" placeholder="Input here Date attended" required><br>
-                    <input type="text" id="educationInput" placeholder="Input here Perfomances" required>
+                    <input type="text" name="school" id="school" placeholder="School Name: " required><br>
+                    <input type="text" name="gradDate" id="gradDate" placeholder="Graduation date: " required><br>
+                    <input type="text" name="grade" id="grade" placeholder="Grade: " required>
                 </div>
                 
                 <h3>Work Experience</h3>
                 <div class="form-input">
-                    <input type="text" id="workInput" placeholder="Input here your work Experience" required>
+                    <input type="text" name="experience" id="experience" placeholder="Work Experience" required>
                 </div>
                 <h3>Skills</h3>
                 <div class="form-input">
-                    <input type="text" id="skillInput" placeholder="Input here your Skills" required>
+                    <input type="text" name="skills" id="skills" placeholder="Skills: " required>
                 </div>
                 <input type="submit" value="Export to PDF">
             </div>
@@ -119,6 +123,8 @@
     <footer>
         <p>CV GENERATOR &copy; 2022 | All Rights Reserved</p>
     </footer>
-    <script src="src/js/main.js"></script>
+    <script type="module" src="src/js/main.js"></script>
+    <script type="module" src="src/js/user.js"></script>
+    <script type="module" src="src/js/jspdf.js"></script>
 </body>
 </html>
