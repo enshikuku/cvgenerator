@@ -1,0 +1,143 @@
+:root {
+    font-size: 62.5%;
+    --theme-color: #2F0743;
+    --light-color: #d4e0ff;
+    --body-background: #333399;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    background-color: var(--theme-color);
+}
+
+header {
+    font-size: 3.5rem;
+    width: 100vw;
+    font-style: italic;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+header nav ul li {
+    margin-right: 1.5rem;
+    list-style-type: none;
+    border: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: aliceblue;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: chartreuse;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.main-content {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--theme-color);
+    color: var(--light-color);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    margin: 1rem;
+    padding: .5rem;
+    text-align: left;
+    font-size: 2.5rem;
+    width: fit-content;
+    box-shadow: 1rem 1rem 1rem #d4e0ff;
+    border: .5rem solid var(--body-background);
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.user-details {
+    /* margin: 1rem;
+    padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+}
+
+.user-details * {
+    margin-bottom: 0.5rem;
+}
+
+.education {
+    /* padding: 1rem;
+    margin: 1rem; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.skills {
+    /* padding: 1rem;
+    margin: 1rem; */
+}
+
+.profile {
+    /* margin: 1rem;
+    padding: 1rem; */
+}
+
+.skills-stack {
+    /* margin: 1rem;
+    padding: 1rem; */
+}
+
+.form-wrapper > div {
+    margin: .5rem;
+    padding: 1rem;
+}
+
+form .form-wrapper .submitBtn {
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 3.5rem;
+}
+
+.btn {
+    color: #2F0743;
+    background-color: green;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}

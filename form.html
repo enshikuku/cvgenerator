@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator</title>
+    <link rel="stylesheet" href="src/css/form.css">
+    <link rel="stylesheet" href="src/css/cv.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="nav-items">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-link">Form</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main class="main-content">
+        <form action="" id="form">
+            <div class="form-wrapper">
+                <div class="user-details">
+                        <label for="firstName">First name: 
+                            <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                        </label>
+                        
+                        <label for="lastName">Last name: 
+                            <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                        </label>
+                        <label for="email">Email address: 
+                            <input type="email" name="email" id="email" placeholder="Enter email address">
+                        </label>
+                        <label for="mobile">Mobile number: 
+                            <input type="number" name="mobile" id="mobile" placeholder="Enter your mobile number">
+                        </label>
+                </div>
+                <div class="education">
+                    <label for="school">College / University: 
+                        <input type="text" name="school" id="school" placeholder="Enter College / University">
+                    </label>
+                    <label for="course">Course: 
+                        <input type="text" name="course" id="course" placeholder="Enter course">
+                    </label>
+                    <label for="grade">Grade: 
+                        <input type="text" name="grade" id="grade" placeholder="First/Second class etc">
+                    </label>
+                </div>
+                
+                <div class="skills">
+                    <p>
+                        Skills and Qualifications:
+                    </p>
+                    <div class="skills-stack">
+                        <p>Enter your three most profound Skills below: </p>
+                        <label for="skill1">
+                            <input type="text" name="skill1" id="skill1" placeholder="Skill One">
+                        </label>
+                        <label for="skill2">
+                            <input type="text" name="skill2" id="skill2" placeholder="Skill Two">
+                        </label>
+                        <label for="skill3">
+                            <input type="text" name="skill3" id="skill3" placeholder="Skill Three">
+                        </label>
+                    </div>
+                </div>
+                <div class="profile">
+                    <p for="bio">About yourself</p>
+                    <textarea name="bio" id="bio" cols="50" rows="5"></textarea>
+                </div>
+                <div class="submitBtn">
+                    <input type="submit" id="submit" value="Submit" class="btn">
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="./src/js/main.js"></script>
+    <script>
+        const resume = document.getElementById('resume');
+        let btn = document.querySelector('button');
+        btn.addEventListener('click', () => html2pdf().from(resume).save())
+    </script>
+</body>
+</html>

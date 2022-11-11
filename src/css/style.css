@@ -2,6 +2,10 @@
     #F6EEE0
     #A45C40
 */
+
+:root {
+    font-size: 62.5%;
+}
 @font-face {
     font-family: Caramond;
     src: url(../assets/fonts/CormorantGaramond-Regular.ttf);
@@ -33,9 +37,10 @@ header h1 {
 header #logo {
     height: 60px;
 }
-nav {
+header nav {
     display: flex;
     gap: 10px;
+    text-transform: capitalize;
 }
 nav a {
     font-size: 30px;
@@ -50,6 +55,7 @@ nav a {
     align-items: center;
     background-image: url("../assets/images/homebg.jpg");
     background-size: contain;
+    background-color: rgba(255, 209, 158, 0.2);
 }
 #home div {
     display: flex;
